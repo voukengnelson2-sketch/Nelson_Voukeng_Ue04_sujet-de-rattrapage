@@ -360,3 +360,62 @@ li {
     justify-content: space-between;
     font-size: 13px;
 }
+
+/* ==========================================================================
+   8. RESPONSIVE DESIGN 
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* Navigation : On passe les éléments les uns sous les autres */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    /* Hero Section : On réduit la taille du texte sur mobile */
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Section Histoire : L'image passe sous le texte au lieu d'être à côté */
+    .history-block {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Section Actualités : La grille passe de 2 colonnes à 1 seule colonne */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section Candidature : Les boutons s'empilent verticalement */
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer : Alignement vertical pour les petits écrans */
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+    }
+}
