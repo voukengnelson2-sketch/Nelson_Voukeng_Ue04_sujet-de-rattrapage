@@ -4,40 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histoire de HETIC - Intégration</title>
-    <!-- Lien vers ton fichier de style -->
+    <!-- Lien vers ton fichier de style CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- En-tête du site (Logo + Menu) -->
-    <header>
-        <nav>
-            <!-- Les liens du menu iront ici -->
+    <!-- 1. HEADER & NAVIGATION -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo-area">
+                <a href="#">
+                    <span class="logo-text">HETIC</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Formations</a></li>
+                <li><a href="#">L'École</a></li>
+                <li><a href="#">Entreprises</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Actualités</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#" class="btn-candidater">Candidater</a>
+            </div>
         </nav>
     </header>
 
-    <!-- Contenu principal -->
+    <!-- CONTENU PRINCIPAL -->
     <main>
-        <!-- 1. Bannière principale -->
+        
+        <!-- 2. HERO SECTION (Grande Bannière) -->
         <section class="hero-section">
+            <div class="hero-content">
+                <h1>L'Histoire de HETIC</h1>
+                <p>Découvrez le parcours, les valeurs et l'évolution de la grande école du web et du numérique depuis sa création.</p>
+            </div>
         </section>
 
-        <!-- 2. Histoire / Chronologie -->
+        <!-- 3. BLOCS DE CONTENUS PRINCIPAUX / HISTOIRE -->
         <section class="history-section">
+            <div class="container">
+                <div class="history-block">
+                    <div class="history-text">
+                        <h2>La création de l'école</h2>
+                        <p>Fondée pour répondre aux nouveaux besoins du marché du travail face à l'émergence d'Internet, HETIC a su s'imposer comme la référence des formations du numérique.</p>
+                    </div>
+                    <div class="history-image">
+                        <!-- Emplacement pour une image de l'école -->
+                        <div class="image-placeholder">Image École</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- 3. Section des Actualités -->
+        <!-- 4. SECTION "NOS DERNIÈRES ACTUS" -->
         <section class="news-section">
+            <div class="container">
+                <h2>Nos dernières actus</h2>
+                <div class="news-grid">
+                    <!-- Carte Actu 1 -->
+                    <article class="news-card">
+                        <div class="card-image">Image Actu 1</div>
+                        <div class="card-body">
+                            <h3>Événement Tech 2026</h3>
+                            <p>Retour sur la dernière conférence des étudiants de la Forge.</p>
+                            <a href="#" class="read-more">Lire l'article</a>
+                        </div>
+                    </article>
+                    <!-- Carte Actu 2 -->
+                    <article class="news-card">
+                        <div class="card-image">Image Actu 2</div>
+                        <div class="card-body">
+                            <h3>Projets de fin d'études</h3>
+                            <p>Découvrez les plateformes web innovantes développées cette année.</p>
+                            <a href="#" class="read-more">Lire l'article</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <!-- 4. Section de Candidature (Boutons d'action) -->
+    
         <section class="cta-section">
+            <div class="cta-content">
+                <h2>Rejoignez HETIC à la rentrée</h2>
+                <p>Prêt à forger votre avenir dans le développement web, le design ou la data ?</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary">Déposer un dossier</a>
+                    <a href="#" class="btn-secondary">Télécharger la brochure</a>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <!-- Pied de page -->
-    <footer>
-        <!-- Liens secondaires et bas de page -->
+    
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <span class="logo-text">HETIC</span>
+                <p>Grande école du web et du numérique.</p>
+            </div>
+            <div class="footer-links-block">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HETIC. Tous droits réservés.</p>
+        </div>
     </footer>
 
     <!-- Lien vers ton fichier JavaScript -->
